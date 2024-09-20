@@ -1,0 +1,6 @@
+div + p {
+    color: green;
+}
+section + h5 {
+    color: violet;
+}

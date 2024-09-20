@@ -1,0 +1,15 @@
+img{
+    height: 100px;
+    width: 100px;
+    float: right;
+}
+
+#div1 {
+    background-color: blueviolet;
+    float: left;
+}
+#div2{
+    background-color: red;
+    clear: left;
+
+}

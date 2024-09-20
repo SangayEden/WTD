@@ -1,0 +1,27 @@
+p{
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.7;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 50px;
+    
+}
+
+h3 {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-style: dotted;
+    /* color: rgb(100, 10, 210); */
+    color: #98afff;
+}
+
+div{
+    margin-bottom: 100px;
+    padding: 100px;
+    border: 2px solid red;
+
+}

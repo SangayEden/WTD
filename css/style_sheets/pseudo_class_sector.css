@@ -1,0 +1,16 @@
+div {
+    background-color: rgb(164, 164, 204);
+    padding: 30px;
+    text-align: center;
+}
+
+div:hover{
+    background-color: hotpink;
+    color: brown;
+}
+input:focus{
+    background: red;
+}
+p:first-child{
+    background-color: yellow;
+}
