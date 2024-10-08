@@ -1,0 +1,1 @@
+document.getElementById("p2").innerHTML="this is a paragraph from external js file";

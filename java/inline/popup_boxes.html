@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup box</title>
+</head>
+<body>
+    <button type="button" onclick="myFunction()">try it</button>
+    <button type="button" onclick="promptBox()">try this too</button>
+
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <script>
+    function myFunction() {
+        var txt;
+        if (confirm("press a button!")){    //comfirm is one of the three popup box
+            txt = "you pressed ok!";
+        } else{
+            txt ="you pressed cancel!";
+        }
+        document.getElementById("demo").innerHTML = txt;
+
+    }
+    function promptBox() {
+        let text;
+        let person = prompt("please enter your name:", "");
+        if (person== null || person == ""){
+            text = "user cancelled the prompt.";
+        } else {
+            text = "hello " + person + "! How are you today?";
+        }
+        document.getElementById("demo2").innerHTML = text;
+    }
+    </script>
+
+</body>
+</html>
