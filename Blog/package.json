@@ -1,0 +1,16 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "blog ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sangay eden",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "express": "^4.21.1",
+    "nodemon": "^2.0.22"
+  }
+}

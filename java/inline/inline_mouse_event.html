@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inline mouse event</title>
+</head>
+<body>
+    <button onclick="alert('button was clicked')">Click Me</button>
+
+    <button ondblclick="this.style.backgroundColor='red'">Double click Me</button>
+    
+    <div onmouseover="this.style.color='blue'">Hover over me!</div>
+
+    <div onmouseout="this.style.backgroundcolor='pink'">Move away!</div>
+
+    <div id="change" onmousedown="this.style.textAlign ='center'">Press the Mouse!</div>
+
+    <div onmouseup="this.style.fontWeight ='bold'">Release the mouse!</div>
+
+    <div onmousemove="this.style.fontStyle='italic' ; this.style.color='red'">move the mouse here!</div>
+
+    <input type="text" placeholder="username" onkeydown="this.style.backgroundColor='red'"><br><br>
+
+    <input type="passsword" placeholder="password" onkeydown="this.style.backgroundColor='green'">
+
+</body>
+</html>

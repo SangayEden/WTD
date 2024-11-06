@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Exercise - Process Student Scores</title>
+</head>
+<body>
+
+    <h1>Processed Student Scores</h1>
+    <p id="result"></p> 
+
+    <script>
+    // Create the student object with names as keys and scores as values
+    function processScores() {
+        let studentScores = {
+            "Sonam" : 76,
+            "Pema"  : 61,
+            "Sangay": 50,
+            "Dechen": 55,
+            "Lhaki" : 92,
+            "Karma" : null, // Null means the loop will stop here
+            "Yuden" : 81
+        };
+        
+        let result = [];  // Array to store the valid student names and scores
+
+        // Using a 'for-in' loop to go through the studentScores object
+        for (let student in studentScores) {
+            let score = studentScores[student];
+
+            // If the score is null, stop the loop
+            if (score === null) {
+                break;
+            }
+
+            // If the score is less than 50, skip this student
+            if (score < 50) {
+                continue;
+            }
+
+            // Otherwise, add the student's name and score to the result array
+            result.push(`${student}: ${score}`);
+        }
+
+        // Return the result array
+        return result;
+    }
+
+    // Call the function and display the result in the paragraph with id 'output'
+    document.getElementById("output").innerHTML = processScores().join("<br>");
+    </script>
+
+</body>
+</html>
